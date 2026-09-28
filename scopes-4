@@ -1,0 +1,11 @@
+a = 3
+b = 4
+SAY "a:" a "b:" b
+CALL calc
+EXIT
+calc PROCEDURE EXPOSE b
+  a = 9
+  b = 8
+  a = a * 3
+  b = b * 4
+  RETURN
